@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/alumno/Desktop/XML/Ejercicio13_fichas.xsd">
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Ejercicio13_fichas.xsd">
   <ficha numero="01" letra="X">
     <codigo>11</codigo>
     <nombre>Ana Sanz Tin</nombre>
