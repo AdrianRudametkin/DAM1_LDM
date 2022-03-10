@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/alumno/Desktop/XML/Ejercicio14.xsd">
+  <expresiones>
+    <expresion1>Capitulo 0</expresion1>
+    <expresion2>Capitulo 0</expresion2>
+    <expresion3>Capitulo 1</expresion3>
+    <expresion4>Capitulo 0</expresion4>
+    <expresion5>aZ</expresion5>
+    <expresion6>ABBC</expresion6>
+    <expresion7>RSS</expresion7>
+    <expresion8>COD645pera</expresion8>
+  </expresiones>
+  <expresiones>
+    <expresion1>Capitulo 9</expresion1>
+    <expresion2>Capitulo 99</expresion2>
+    <expresion3>Capitulo 99</expresion3>
+    <expresion4>Capitulo 99999</expresion4>
+    <expresion5>?Z</expresion5>
+    <expresion6>ABBBBBC</expresion6>
+    <expresion7>RSSSSSSSSSSS7</expresion7>
+    <expresion8>COD646manzana</expresion8>
+ </expresiones>
+</root>

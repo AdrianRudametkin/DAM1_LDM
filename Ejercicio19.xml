@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<articulos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Ejercicio19_val.xsd">
+   <articulo>
+      <nombre>Mesa</nombre>
+      <precio moneda="Euro">50</precio>
+   </articulo>
+   <articulo>
+      <nombre>Silla</nombre>
+      <precio moneda="Dólar">78.99</precio>
+   </articulo>
+</articulos>
