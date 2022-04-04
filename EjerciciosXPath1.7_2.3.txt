@@ -1,0 +1,29 @@
+1.7
+//nombre[../grado="Superior"]
+    
+//ciclo[grado="Superior"]/nombre
+
+1.8
+//nombre[../decretoTitulo/@año<2010]/text()
+
+//@año[.<2010]/../../nombre/text()
+
+1.9
+//nombre[../decretoTitulo/@año=2008 or ../decretoTitulo/@año=2010]/text()
+
+(//@año[.=2008] | //@año[.=2010])/../../nombre/text()
+
+2.1
+//nombre/text()
+
+2.2
+//nombre[../ciclo="ASIR"]/text()
+
+//modulo[ciclo="ASIR"]/nombre/text()
+
+2.3
+//nombre[../curso=2]/texto()
+
+//modulo[curso=2]/nombre/text()
+
+

@@ -1,0 +1,28 @@
+﻿﻿<?xml version="1.0" encoding="UTF-8"?>
+<equipos>
+  <equipo>
+    <nombre>Valencia CF</nombre>
+    <estadio metro="si">Mestalla</estadio>
+    <añofundacion año="1919"/>
+   </equipo>
+ <equipo>
+    <nombre>Real Madrid</nombre>
+    <estadio metro="si">Santiago Bernabeu</estadio>
+    <añofundacion año="1902"/>
+   </equipo>
+   <equipo>
+    <nombre>FC Barcelona </nombre>
+    <estadio metro="si">Camp Nou</estadio>
+    <añofundacion año="1899"/>
+   </equipo>
+  <equipo>
+    <nombre>CD Acero</nombre>
+    <estadio metro="no">campo municipal José Claramunt</estadio>
+    <añofundacion año="1919"/>
+   </equipo>
+     <equipo>
+    <nombre>Cadiz CF</nombre>
+    <estadio metro="no"> Ramón de Carranza</estadio>
+    <añofundacion año="1910"/>
+   </equipo>
+</equipos>

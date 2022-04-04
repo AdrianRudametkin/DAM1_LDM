@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<dadesfranquicia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Examen1.xsd">
+  <franquiciat privilegi="no">
+    <usuari>pepet</usuari>
+    <contrasenya>contra1</contrasenya>
+  </franquiciat>
+  <resultats>
+      <beneficinet moneda="euro">300</beneficinet>
+      <beneficibrut moneda="euro">800</beneficibrut>
+      <inversio moneda="libras">500</inversio>
+  </resultats>
+  
+  <tipusfranquicia>2</tipusfranquicia>
+
+  <llistacomanda>
+    <ampliable>TRUE</ampliable>
+    <comanda id="1">
+      <producte>fanta 33cl 5</producte>
+    </comanda>
+    <comanda id="2">
+      <producte>colas 2lg 10</producte>
+    </comanda>
+    <comanda id="3">
+      <producte>comidaperro 500g 20</producte>
+    </comanda>  
+  </llistacomanda>
+</dadesfranquicia>

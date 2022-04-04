@@ -1,0 +1,23 @@
+Ejercicio 1:
+//equipo/nombre
+
+Ejercicio 2:
+//@año[.>=1902 and .<=1910]/../../estadio
+
+Ejercicio 3:
+//equipo/nombre[../estadio[@metro="si"]]/text()
+
+Ejercicio 4:
+//estadio[@metro="si" and ../añofundacion[@año=1899]]/text()
+
+Ejercicio 5:
+//estadio[../nombre="Valencia CF" or ../añofundacion[@año=1910]]/text()
+
+Ejercicio 6:
+//nombre[
+    ../añofundacion[
+        @año = //@año[
+            ../../nombre="Valencia CF"
+        ]
+    ] 
+]/text()
