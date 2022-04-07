@@ -1,0 +1,48 @@
+Ejercicio 2.3
+//modulo[./curso = "2"]/nombre/text()
+//modulo/curso[.="2"]/../nombre/text()
+
+Ejercicio 2.4
+//modulo/horasSemanales[.<"5"]/../nombre/text()
+//modulo[./horasSemanales < "5"]/nombre/text()
+
+Ejericio 2.5
+//modulo[./curso="1" and ./ciclo="ASIR"]/nombre/text()
+
+Ejericio 2.6
+//horasSemanales[.>3]/text()
+
+
+Ejercicio 3.1
+//modulo[./ciclo = 
+    //ciclo[./nombre="Sistemas Microinformáticos y Redes"]/@id
+]
+/nombre/text()
+
+Ejercicio 3.2
+//ciclo[@id = 
+    //modulo[./nombre="Lenguajes de marcas y sistemas de gestión de información"]/ciclo/text()
+]
+/nombre/text()
+
+Ejercicio 3.3
+//modulo[./ciclo/text() = 
+    //ciclo[./grado = "Superior"]/@id
+]
+/nombre/text()
+
+
+Ejercicio 3.4
+//modulo[./ciclo/text() = 
+    //ciclo[./decretoTitulo[@año=2008]]/@id]
+/nombre/text()
+
+Ejercicio 3.5
+//ciclo[@id=
+    //modulo[./curso=1]/ciclo/text()
+]
+/grado/text()
+
+
+
+

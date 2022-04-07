@@ -16,12 +16,6 @@
     <ampliable>TRUE</ampliable>
     <comanda id="1">
       <producte>fanta 33cl 5</producte>
-    </comanda>
-    <comanda id="2">
-      <producte>colas 2lg 10</producte>
-    </comanda>
-    <comanda id="3">
-      <producte>comidaperro 500g 20</producte>
     </comanda>  
   </llistacomanda>
 </dadesfranquicia>
