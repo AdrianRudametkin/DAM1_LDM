@@ -1,0 +1,35 @@
+Examen Lenguaje de Marcas: XPath
+Rogelio Rodriguez
+
+Ejercicio A)
+//coche[./venta or ./marca/text()="FORD"]/bastidor/text()
+
+
+
+Ejercicio B)
+//coche[
+    ./concesionario= //concesionarios/concesionario[
+        ./nombre="Segundo concesionario"
+    ]/@id
+]/bastidor
+
+
+
+Ejercicio C)
+//coche/marca[./text()="PEUGEOT"]/.. | //coche/marca[./text()="RENAULT"]/..
+
+
+
+Ejercicio D)
+//coche/marca/text()[.="PEUGEOT" or .="RENAULT"]/../..
+
+
+Ejercicio E)
+//coche[@modelo="Fiesta" or ./anyo/text()<2019]/@modelo
+
+
+Ejercicio F)
+(//coche/concesionario/text()[.=//concesionarios/concesionario[3]/@id]/../..)[position()=1 or position()=3]
+
+
+

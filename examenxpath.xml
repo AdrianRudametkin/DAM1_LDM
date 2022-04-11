@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<plataforma>
+  <concesionarios>
+    <concesionario id="1">
+      <nombre>Primer concesionario</nombre>
+      <comision>30</comision>
+      <anyo>2010</anyo>
+    </concesionario>
+    <concesionario id="2">
+      <nombre>Segundo concesionario</nombre>
+      <comision>20</comision>
+      <anyo>2015</anyo>
+    </concesionario>
+    <concesionario id="3">
+      <nombre>Tercer concesionario</nombre>
+      <comision>10</comision>
+      <anyo>2020</anyo>
+    </concesionario>
+  <vehiculos>
+    <coche modelo="Focus">
+      <bastidor>1b</bastidor>
+      <marca>FORD</marca>
+      <anyo>2015</anyo>
+      <precio moneda="euros">3000</precio>
+      <concesionario>2</concesionario>
+    </coche>
+    <coche modelo="Focus">
+      <bastidor>2b</bastidor>
+      <marca>FORD</marca>
+      <anyo>2017</anyo>
+      <precio moneda="euros">5000</precio>
+      <concesionario>3</concesionario>
+    </coche>
+    <coche modelo="Clio">
+    <bastidor>3b</bastidor>
+      <marca>RENAULT</marca>
+      <anyo>2019</anyo>
+      <precio moneda="euros">9000</precio>
+      <concesionario>2</concesionario>
+      <venta>
+          <fecha>23-07-2019</fecha>
+          <cliente>1111</cliente>
+      </venta>
+    </coche>
+      <coche modelo="Megan">
+      <bastidor>4b</bastidor>
+      <marca>RENAULT</marca>
+      <anyo>2018</anyo>
+      <precio moneda="libras">6000</precio>
+      <concesionario>1</concesionario>
+    </coche>
+    <coche modelo="Fiesta">
+    <bastidor>5b</bastidor>
+      <marca>FORD</marca>
+      <anyo>2020</anyo>
+      <precio moneda="euros">10000</precio>
+      <concesionario>3</concesionario>
+      <venta>
+          <fecha>23-07-2020</fecha>
+          <cliente>2222</cliente>
+      </venta>
+    </coche>
+    <coche modelo="308">
+    <bastidor>6b</bastidor>
+      <marca>PEUGEOT</marca>
+      <anyo>2016</anyo>
+      <precio moneda="euros">2000</precio>
+      <concesionario>3</concesionario>
+    </coche>
+
+
+    </vehiculos>
+  </concesionarios>
+
+</plataforma>
