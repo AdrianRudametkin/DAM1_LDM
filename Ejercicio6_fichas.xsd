@@ -13,7 +13,7 @@
         <xs:element name="nombre" type="xs:string"/>
         <xs:element name="edad" type="xs:string"/>
       </xs:sequence>
-      <xs:attribute name="numero" type="xs:entero" use="required"/>
+      <xs:attribute name="numero" type="xs:integer" use="required"/>
     </xs:complexType>
-    </xs:element>
+   </xs:element>
 </xs:schema>

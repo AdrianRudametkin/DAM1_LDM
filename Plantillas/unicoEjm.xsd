@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="raiz">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="elemento1" />
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="id">
+            <xs:selector xpath=".//elemento1"/>
+            <xs:field xpath="@atributoID"/>
+        </xs:key>
+    </xs:element>
+
+
+
+    <xs:element name="elemento1">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="elemento1_1" type="xs:string" />
+                <xs:element name="elemento1_2" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="atributoID" type="xs:string" />
+
+        </xs:complexType>
+
+    </xs:element>
+</xs:schema>

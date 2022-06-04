@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="raiz">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="elemento1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="elemento1">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="elemento1_1" type="tipo1" />
+                <xs:element name="elemento1_2" type="tipo1_1" />
+            </xs:sequence>
+            <xs:attribute name="atributo" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="tipo1">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="armario" />
+            <xs:enumeration value="mesa" />
+            <xs:enumeration value="silla" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipo1_1">
+        <xs:simpleContent>
+            <xs:extension base="tipo1">
+                <xs:attribute name="color">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="blanco" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+</xs:schema>
