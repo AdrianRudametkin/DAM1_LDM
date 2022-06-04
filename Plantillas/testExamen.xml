@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dadesfranquicia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="examenBien.xsd">
+    <franquiciat privilegi="no">
+        <usuari>pepet</usuari>
+        <contrasenya>contra1</contrasenya>
+    </franquiciat>
+    <resultats data="22/09/2021">
+        <beneficinet moneda="euro"></beneficinet>
+        <beneficibrut moneda="euro">800</beneficibrut>
+        <inversio moneda="libras">500</inversio>
+        <tipus>A</tipus>
+    </resultats>
+    <tipusfranquicia>2</tipusfranquicia>
+
+    <llistacomanda>
+        <ampliable>true</ampliable>
+        <comanda id="1">
+            <producte>fanta 33cl 5</producte>
+        </comanda>
+        <comanda id="2">
+            <producte>cola 2l 10</producte>
+        </comanda>
+        <comanda id="3">
+            <producte>comidaperro 500g 20</producte>
+        </comanda>
+    </llistacomanda>
+</dadesfranquicia>

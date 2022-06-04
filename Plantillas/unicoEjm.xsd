@@ -3,7 +3,7 @@
     <xs:element name="raiz">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="elemento1" />
+                <xs:element ref="elemento1"  maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
         <xs:key name="id">
@@ -21,8 +21,6 @@
                 <xs:element name="elemento1_2" type="xs:string" />
             </xs:sequence>
             <xs:attribute name="atributoID" type="xs:string" />
-
         </xs:complexType>
-
     </xs:element>
 </xs:schema>

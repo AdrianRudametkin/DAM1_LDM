@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <raiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="unicoEjm.xsd">
-    <elemento1 atributoID="11">
-        <elemento1_1>aaa</elemento1_1>
-        <elemento1_2>aaa</elemento1_2>
-    </elemento1>
+    <resultats>
+        <beneficinet moneda="euro">300</beneficinet>
+        <beneficibrut moneda="euro">800</beneficibrut>
+        <inversio moneda="libras">500</inversio>
+    </resultats>
 </raiz>
