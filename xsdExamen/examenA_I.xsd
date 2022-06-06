@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="raiz">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="origen" />
+        <xs:element name="elaborado" type="xs:date" nillable="false" minOccurs="1"/>
+        <xs:element name="nombre" type="nombre_Tipo" minOccurs="0" />
+        <xs:element ref="prediccion" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:key name="diaID">
+      <xs:selector xpath=".//dia" />
+      <xs:field xpath="@fecha" />
+    </xs:key>
+  </xs:element>
+
+  <xs:simpleType name="nombre_Tipo">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="5" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="origen">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="productor" type="xs:string" />
+        <xs:element name="language" type="xs:string" />
+        <xs:element name="nota_legal" type="xs:string" />
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="prediccion">
+    <xs:complexType>
+      <xs:sequence minOccurs="2" maxOccurs="4">
+        <xs:element ref="dia" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="dia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="codigo" type="codigo_Tipo" />
+        <xs:element ref="prob_precipitacion" maxOccurs="unbounded" />
+        <xs:element ref="estado_cielo" maxOccurs="unbounded" />
+        <xs:element ref="viento" maxOccurs="unbounded" />
+        <xs:element ref="racha_max" maxOccurs="unbounded" />
+        <xs:element ref="temperatura" />
+        <xs:element ref="humedad_relativa" />
+        <xs:element name="uv_max" type="uvmax_Tipo" minOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="fecha" type="xs:date" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="codigo_Tipo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{2,3}_(nuboso|soleado) [A-Z][A-Z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="uvmax_Tipo">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="prob_precipitacion">
+    <xs:complexType mixed="true">
+      <xs:attribute name="periodo" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="estado_cielo">
+    <xs:complexType mixed="true">
+      <xs:attribute name="descripcion" type="xs:string" use="required" />
+      <xs:attribute name="periodo" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="viento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="direccion" type="direccion_Tipo" />
+        <xs:element name="velocidad" type="xs:positiveInteger" />
+      </xs:sequence>
+      <xs:attribute name="periodo" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="direccion_Tipo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[N|S|E|O]" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="racha_max">
+    <xs:complexType>
+      <xs:attribute name="periodo" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="temperatura">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="maxima" type="xs:string" />
+        <xs:element name="minima" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="humedad_relativa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="maxima" type="xs:string" />
+        <xs:element name="minima" type="xs:string" />
+        <xs:element ref="dato" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dato">
+    <xs:complexType mixed="true">
+      <xs:attribute name="hora" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,74 @@
+﻿<raiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="examenJ.xsd">
+  <origen>
+    <productor>Agencia Estatal de Meteorología - AEMET. Gobierno de España</productor>
+    <language>es</language>
+    <nota_legal>https://www.aemet.es/es/nota_legal</nota_legal>
+  </origen>
+  <elaborado>2022-06-02</elaborado>
+  <nombre>València</nombre>
+  <prediccion>
+    <dia fecha="2022-06-03">
+      <codigo>03_nuboso AL</codigo>
+      <prob_precipitacion periodo="00-12">20</prob_precipitacion>
+      <prob_precipitacion periodo="12-24">0</prob_precipitacion>
+      <estado_cielo periodo="00-12" descripcion="Intervalos nubosos">13</estado_cielo>
+      <estado_cielo periodo="12-24" descripcion="Despejado">11</estado_cielo>
+      <viento periodo="00-12">
+        <direccion>E</direccion>
+        <velocidad>15</velocidad>
+      </viento>
+      <viento periodo="12-24">
+        <direccion>N</direccion>
+        <velocidad>15</velocidad>
+      </viento>
+      <racha_max periodo="00-12" />
+      <racha_max periodo="12-24" />
+      <temperatura>
+        <maxima>27</maxima>
+        <minima>20</minima>
+      </temperatura>
+      <humedad_relativa>
+        <maxima>95</maxima>
+        <minima>45</minima>
+        <dato hora="06">85</dato>
+        <dato hora="12">50</dato>
+        <dato hora="18">75</dato>
+        <dato hora="24">90</dato>
+      </humedad_relativa>
+      <uv_max>9</uv_max>
+      <validado>true</validado>
+    </dia>
+    <dia fecha="2022-06-04">
+      <codigo>03_soleado LO</codigo>
+      <prob_precipitacion periodo="00-12">50</prob_precipitacion>
+      <prob_precipitacion periodo="12-24">20</prob_precipitacion>
+      <estado_cielo periodo="00-12" descripcion="Intervalos nubosos">13</estado_cielo>
+      <estado_cielo periodo="12-24" descripcion="Nuboso">14</estado_cielo>
+      <viento periodo="00-12">
+        <direccion>O</direccion>
+        <velocidad>150</velocidad>
+      </viento>
+      <viento periodo="12-24">
+        <direccion>S</direccion>
+        <velocidad>1</velocidad>
+      </viento>
+      <racha_max periodo="00-12" />
+      <racha_max periodo="12-24" />
+      <temperatura>
+        <maxima>28</maxima>
+        <minima>24</minima>
+      </temperatura>
+      <humedad_relativa>
+        <maxima>99</maxima>
+        <minima>45</minima>
+        <dato hora="06">85</dato>
+        <dato hora="12">50</dato>
+        <dato hora="18">75</dato>
+        <dato hora="24">90</dato>
+      </humedad_relativa>
+      <uv_max>10</uv_max>
+      <validado>false</validado>
+    </dia>
+  </prediccion>
+</raiz>

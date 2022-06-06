@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="dadesfranquicia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="franquiciat" />
+                <!--cambiar 'resultats' por resultats3 para ejercicio 3-->
+                <xs:element name="resultats" type="resultats3" />
+                <!-- Ejercicio 2f) tipusfranquicia debe ser obligatorio -->
+                <xs:element name="tipusfranquicia" type="tipusfranquicia_Tipo" minOccurs="1"/>
+                <xs:element ref="llistacomanda" />
+            </xs:sequence>
+        </xs:complexType>
+        <!-- Ejercicio 2g) atributo id (en comanda) debe ser clave primaria (no nulo y único)-->
+        <xs:key name="comandaID">
+            <xs:selector xpath=".//comanda"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+    </xs:element>
+
+
+    <xs:element name="franquiciat">
+        <xs:complexType>
+            <!-- Ejercicio 2a) usuari y contrasenya pueden ir en diferente orden-->
+            <xs:all>
+                <xs:element name="usuari" type="franquiciat_tipo" />
+                <xs:element name="contrasenya" type="franquiciat_tipo" />
+            </xs:all>
+            <!-- Ejercicio 2a) el atributo privilegi no es obligatorio-->
+            <xs:attribute name="privilegi" type="xs:string" use="optional" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="franquiciat_tipo">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="5" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:complexType name="resultats">
+        <xs:sequence>
+            <!-- Ejercicio 2b) benificinet será opcional y 0 por defecto-->
+            <xs:element name="beneficinet" type="resultats_Tipo" default="0" minOccurs="0" />
+            <!-- Ejercicio 2c) benificibrut e inversio será obligatorio-->
+            <xs:element name="beneficibrut" type="resultats_Tipo" minOccurs="1" />
+            <xs:element name="inversio" type="resultats_Tipo" minOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Ejercicio 3a) 3bi) Extiende resultats para las nuevas cosas-->
+    <xs:complexType name="resultats3">
+        <xs:complexContent>
+            <xs:extension base="resultats">
+                <xs:sequence>
+                    <xs:element name="tipus">
+                        <!-- TIPUS PODRÀ SER A, B, C,  D… fins la Z i podrà ser en minúscules i majúscules-->
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:pattern value="[a-zA-Z]"></xs:pattern>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+                <!-- Ejercicio 3biii) data no es obligatorio-->
+                <xs:attribute name="data" type="data_Tipo" use="optional"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <!-- Ejercicio 3biii) data es valido-->
+    <xs:simpleType name="data_Tipo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-2]?[0-9]|30|31)?/(0[0-9]|10|11|12)/\d+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Ejercicio 2e) benefici e inversio tiene que ser positivo-->
+    <xs:simpleType name="positivo_Tipo">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="resultats_Tipo" mixed="true">
+        <xs:simpleContent>
+            <!-- Ejercicio 2e)-->
+            <xs:extension base="positivo_Tipo">
+                <!-- Ejercicio 2d) la moneda sera dolar euro o libra-->
+                <xs:attribute name="moneda">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="euro" />
+                            <xs:enumeration value="dolar" />
+                            <xs:enumeration value="libras" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <!-- Ejercicio 2f) tipusfranquicia debe ser del 1 al 4 -->
+    <xs:simpleType name="tipusfranquicia_Tipo">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="llistacomanda">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Ejercicio 2h) ampliable debe ser true o false-->
+                <xs:element name="ampliable" type="xs:boolean" />
+                <xs:element ref="comanda" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    
+    <xs:element name="comanda">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="producte" type="producte_Tipo" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:integer" />
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Ejercicio 2i) producto debe tener ciertas especificaciones-->
+    <xs:simpleType name="producte_Tipo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z]{3,15} [0-9]{0,4}(cl|ml|l|g|kg) ([1-9]?[1-9]|[0-9][0-9]|100)"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
