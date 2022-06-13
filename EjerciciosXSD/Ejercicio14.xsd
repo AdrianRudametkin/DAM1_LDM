@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="expresiones" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="expresion1"/>
+              <xs:element ref="expresion2"/>
+              <xs:element ref="expresion3"/>
+              <xs:element ref="expresion4"/>
+              <xs:element ref="expresion5"/>
+              <xs:element ref="expresion6"/>
+              <xs:element ref="expresion7"/>
+              <xs:element ref="expresion8"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="expresion1">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="Capitulo \d"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="expresion2">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="Capitulo \d*\d"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="expresion3">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="Capitulo [1-9][0-9]*"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="expresion4">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="Capitulo \d{1,}"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="expresion5">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="\D[a-z|A-Z|?|=]*Z"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="expresion6">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="AB{1,}C"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="expresion7">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="RS{2,}\d*"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="expresion8">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="COD\d\d\d.+"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <cd>
+    <title artist="Many">1999 Grammy Nominees</title>
+    <price>10.20</price>
+    <year>1999</year>
+  </cd>
+  <cd>
+    <title artist="Bee Gees">One night only</title>
+    <price>10.90</price>
+    <year>1998</year>
+  </cd>
+  <cd>
+    <title artist="Eros Ramazzotti">Eros</title>
+    <price>9.90</price>
+    <year>1997</year>
+  </cd>
+  <cd>
+    <title artist="Will Smith">Big Willie style</title>
+    <price>9.90</price>
+    <year>1997</year>
+  </cd>
+  <cd>
+    <title artist="Andrea Bocelli">Romanza</title>
+    <price>10.80</price>
+    <year>1996</year>
+  </cd>
+  <cd>
+    <title artist="Jorn Hoel">Soulsville</title>
+    <price>7.90</price>
+    <year>1996</year>
+  </cd>
+  <cd>
+    <title artist="Savage Rose">Black angel</title>
+    <price>10.90</price>
+    <year>1995</year>
+  </cd>
+  <cd>
+    <title artist="Kenny Rogers">For the good times</title>
+    <price>8.70</price>
+    <year>1995</year>
+  </cd>
+  <cd>
+    <title artist="Luciano Pavarotti">Pavarotti Gala Concert</title>
+    <price>9.90</price>
+    <year>1991</year>
+  </cd>
+  <cd>
+    <title artist="Gary Moore">Still got the blues</title>
+    <price>10.20</price>
+    <year>1990</year>
+  </cd>
+  <cd>
+    <title artist="Rod Stewart">Maggie May</title>
+    <price>8.50</price>
+    <year>1990</year>
+  </cd>
+  <cd>
+    <title artist="Cat Stevens">The very best of</title>
+    <price>8.90</price>
+    <year>1990</year>
+  </cd>
+  <cd>
+    <title artist="Bonnie Tyler">Hide your heart</title>
+    <price>9.90</price>
+    <year>1988</year>
+  </cd>
+  <cd>
+    <title artist="Sam Brown">Stop</title>
+    <price>8.90</price>
+    <year>1988</year>
+  </cd>
+  <cd>
+    <title artist="Percy Sledge">When a man loves a woman</title>
+    <price>8.70</price>
+    <year>1987</year>
+  </cd>
+  <cd>
+    <title artist="T`Pau">Bridge of Spies</title>
+    <price>7.90</price>
+    <year>1987</year>
+  </cd>
+  <cd>
+    <title artist="The Communards">Red</title>
+    <price>7.80</price>
+    <year>1987</year>
+  </cd>
+  <cd>
+    <title artist="Joe Cocker">Unchain my heart</title>
+    <price>8.20</price>
+    <year>1987</year>
+  </cd>
+  <cd>
+    <title artist="Bob Dylan">Empire Burlesque</title>
+    <price>10.90</price>
+    <year>1985</year>
+  </cd>
+  <cd>
+    <title artist="Simply Red">Picture book</title>
+    <price>7.20</price>
+    <year>1985</year>
+  </cd>
+  <cd>
+    <title artist="Tina Turner">Private Dancer</title>
+    <price>8.90</price>
+    <year>1983</year>
+  </cd>
+  <cd>
+    <title artist="Kim Larsen">Midt om natten</title>
+    <price>7.80</price>
+    <year>1983</year>
+  </cd>
+  <cd>
+    <title artist="Dolly Parton">Greatest Hits</title>
+    <price>9.90</price>
+    <year>1982</year>
+  </cd>
+  <cd>
+    <title artist="Dr.Hook">Sylvias Mother</title>
+    <price>8.10</price>
+    <year>1973</year>
+  </cd>
+  <cd>
+    <title artist="Van Morrison">Tupelo Honey</title>
+    <price>8.20</price>
+    <year>1971</year>
+  </cd>
+  <cd>
+    <title artist="Otis Redding">The dock of the bay</title>
+    <price>7.90</price>
+    <year>1968</year>
+  </cd>
+</catalog>
