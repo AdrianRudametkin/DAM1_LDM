@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+@font-face {
+    font-family: customFont;
+    src: url(Sriracha-Regular.ttf);
+}
+
+body{
+    background-color: #ffb521;
+    padding: 5px;
+}
+header h1{
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    font-family: customFont;
+    padding: 20px;
+}
+nav{
+    padding-left: 100px;
+    padding-bottom: 20px;
+    display: block;
+    background-color: lightblue;
+}
+nav a{
+    display: inline-block;
+    border: 2px solid black;
+    padding: 3px;
+    font-size: 15px;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+.section1{
+    padding-top: 35px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+.section1 img{
+    float: left;
+    width: 250px;
+    height: 200px;
+    margin-right: 5px;
+}
+.section1 p{
+    font-size: 20px;
+    color: blue;
+    text-align: justify;
+}
+
+.borde_azul {
+    border-top: 30px solid blue;
+    border-bottom: 30px solid blue;
+}
+
+.section2 {
+    padding-top: 35px;
+    padding-bottom: 60px;
+    background-color: lightblue;
+}
+.section2 img{
+    float: right;
+    width: 200px;
+    height: 180px;
+    margin-left: 5px;
+}
+.section2 p{
+    font-size: 20px;
+    color: red;
+    text-align: justify;
+}
+.borde_rojo {
+    border-top: 30px solid red;
+    border-bottom: 30px solid red;
+}
+
+.section3 h1{
+    font-size: 26px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.section3 article{
+    display: block-inline;
+    background-color: lightgoldenrodyellow;
+    margin: 20px 0 20px 80px;
+    padding: 1px 5px;
+}
+.lista{
+    list-style: none;
+}
+.lista li{
+    line-height: 180%;
+}
+.lista li:nth-child(1):before {content: "\30a4.";}
+.lista li:nth-child(2):before {content: "\30ed.";}
+.lista li:nth-child(3):before {content: "\30cf.";}
+.lista li:nth-child(4):before {content: "\30cb.";}
+.lista li:nth-child(5):before {content: "\30db.";}
+.lista li:nth-child(6):before {content: "\30d8.";}
+footer{
+    background-color: salmon;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+footer p{
+    border-top: 2px solid lightblue;
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+

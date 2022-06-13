@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+html{
+	font-family: "Comic Sans", cursive;
+	color: black;
+}
+
+p{
+	color: darkgreen;
+}
+
+#parafo_def{
+	color: blue;
+}
+
+.navegador{
+	color: red;
+}

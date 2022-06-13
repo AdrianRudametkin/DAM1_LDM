@@ -1,0 +1,56 @@
+/*
+	--base_color: #62A87C;
+	--font_light: #C3F3C0;
+	--font_dark: #7EE081;
+	--accent1: #462255;
+	--accent2: #313B72;
+*/
+body {
+    background-color: #C3F3C0;
+    color: #462255;
+    font-family: "Comic Sans MS", "Comic Sans", Helvetica, cursive;
+    text-align: justify;
+}
+
+h1 {
+    color: #313B72;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+h2 {
+    background-color: #62A87C;
+    color: #462255;
+    font-size: 22;
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px;
+}
+
+h3 {
+    background-color: #62A87C;
+    color:#462255;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+p {
+	font-size: 16px;
+    background-color: #7EE081;
+    padding: 10px;
+}
+
+em {
+    color: #313B72;
+    font-style: normal;
+    font-weight: bold;
+}
+
+strong {
+    color: #313B72;
+    font-weight: normal;
+}

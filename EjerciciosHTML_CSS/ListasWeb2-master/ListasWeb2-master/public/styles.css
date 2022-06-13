@@ -1,0 +1,20 @@
+*{
+    font-family: serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    border-left: 2px solid lightblue;
+}
+
+header h1{
+    font-size: 35px;
+}
+
+main h1{
+    font-size: 25px;
+}
+
+main ul{
+    list-style-type: circle;
+}

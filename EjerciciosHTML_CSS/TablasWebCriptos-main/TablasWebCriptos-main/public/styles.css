@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@font-face{
+    font-family: Hanalei;
+    src: url(Hanalei-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+    font-family: serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+header{
+    font-family: Hanalei;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr{
+    width: 50vw;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+footer{
+    display: block;
+    background-color: #FBD800;
+    color: #0210E5;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    height: 70px;
+    padding: 25px;
+    border: 5px double red;
+}
+
+
+/* Primera tabla*/
+.tabla1{
+    display: table;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.tabla1 caption{
+    background-color: #FBD800;
+    color: #0210E5;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 50vw;
+}
+.tabla1 th{
+    font-weight: bold;
+}
+
+.tabla1 table{
+    border: 1px solid black;
+}
+.tabla1 td, .tabla1 th{
+    border: 1px solid black;
+}
+
+/*Divisor*/
+.divisor{
+    width: 100vw;
+    border:1px solid black;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+/* Segunda tabla*/
+.tabla2{
+    display: table;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.tabla2 table{
+    border-collapse: collapse;
+    border:1px solid black;
+}
+.tabla2 caption{
+    background-color: #FBD800;
+    color: #0210E5;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 80vw;
+    caption-side: bottom;
+}
+.tabla2 th{
+    font-weight: bold;
+}
+.tabla2 th, .tabla2 td{
+    border: 1px solid black;
+}
+
+.top{
+    border-top: 3px dotted red;
+}
+
+.bottom{
+    border-bottom: 3px dotted red;
+}
+
+.right{
+    border-right: 3px dotted red;
+}
+
+.left{
+    border-left: 3px dotted red;
+}
+
+.none td{
+    border: none;
+}

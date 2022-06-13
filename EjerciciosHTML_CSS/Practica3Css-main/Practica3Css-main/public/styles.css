@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@font-face {
+    font-family: PottaOne;
+    src: url(fonts/PottaOne-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: YuseiMagic;
+    src: url(fonts/YuseiMagic-Regular.ttf) format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*---------*/
+
+.potaOne{
+    font-family: PottaOne;
+}
+
+.coda{
+    font-family: 'Coda Caption', sans-serif;
+}
+
+.yusei{
+    font-family: YuseiMagic;
+}
+
+/*---------*/
+
+.title{
+    background-color: blue;
+    width: 75vw;
+    margin: 20px 0;
+}
+.title h1{
+    text-align: center;
+    font-size: 2.5vw;
+    color:yellow
+}
+
+/*---------*/
+
+.aside p{
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    font-size: 1.2vw;
+}
+.aside p:first-child{
+    color: white;
+    background-color: rgb(22, 122, 117);
+    display: inline-block;
+    position: static;
+    width: 30vw;
+}
+.aside p:nth-child(2){
+    line-height: 300%;
+    display: inline-block;
+    position: absolute;
+    width: 70vw;
+}
+.aside mark{
+    background-color: black;
+    color: yellow;
+}
+
+/*---------*/
+
+.line{
+    width: 75vw;
+    height: 1vw;
+    background-color: blue;
+}
+
+#line1{
+    width: 45vw;
+    position: relative;
+    left: 40vw;
+    top: -1vw;
+}
+#line2{
+    width: 50vw;
+    position: relative;
+    left: 25vw;
+}

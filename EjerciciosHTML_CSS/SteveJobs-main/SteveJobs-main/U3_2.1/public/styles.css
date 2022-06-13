@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+html,
+h1,
+h2 p,
+a,
+ol,
+li {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background: #B5D3E7;
+    font-weight: normal;
+    text-decoration: none;
+
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: blue;
+}
+
+h1::first-letter {
+    font-size: 9rem;
+    color: black;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+nav {
+    color: blue;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+footer p {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+section p::first-line {
+    color: red;
+}
+
+hr {
+    color: white;
+}
+
+.abs {
+    position: absolute;
+    width: 250px;
+    bottom: 0;
+    right: 0;
+}
+
+.rel {
+    position: relative;
+}
+
+.link1 {
+    color: blue;
+}
+
+.link1:hover {
+    color: red;
+    background: yellow;
+}
+
+.link2 {
+    color: blue;
+    background: white;
+}
+
+.link2:visited {
+    color: white;
+    background: blue;
+}

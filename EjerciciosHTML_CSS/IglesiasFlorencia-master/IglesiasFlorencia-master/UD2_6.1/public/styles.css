@@ -1,0 +1,49 @@
+/* Paginas web HTML y hojas de estilo CSS   */
+/* Bartolome Sintes Marco                   */
+/* https://www.mclibre.org                  */
+body {
+  background-color: #87CEEB;
+  font-family: Garamond, serif;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+h1 {
+  color: #000000;
+  font-family:"Brush Script MT", fantasy;
+  font-weight: 900;
+  letter-spacing: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  clear: both;
+  background-color: #862632;
+  color: white;
+}
+
+p.centrado {
+  text-align: center;
+}
+
+img.izq {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+img.der {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+strong {
+  font-style: oblique;
+}
+
+address {
+  clear: both;
+  font-size: 80%;
+}
